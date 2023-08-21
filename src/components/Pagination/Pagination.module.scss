@@ -1,0 +1,19 @@
+.container {
+  @apply inline-flex -space-x-px text-sm;
+}
+
+.page {
+  @apply flex items-center justify-center px-3 h-8 first:rounded-l-lg last:rounded-r-lg leading-tight text-gray-500 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400;
+
+  &:hover {
+    @apply bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-400;
+  }
+
+  &.disabled {
+    @apply cursor-not-allowed pointer-events-none;
+  }
+
+  &.active {
+    @apply text-blue-600 border-gray-300 bg-blue-50 dark:border-gray-700 dark:bg-gray-700 dark:text-white;
+  }
+}

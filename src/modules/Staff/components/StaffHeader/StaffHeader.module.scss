@@ -1,0 +1,15 @@
+.header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.input {
+  @apply max-w-xs;
+}
+
+.dropdowns {
+  @apply flex;
+}
+
+.dropdown {
+  @apply w-48 mr-2 last:mr-0;
+}

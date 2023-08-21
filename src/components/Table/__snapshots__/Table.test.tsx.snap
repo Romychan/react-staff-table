@@ -1,0 +1,244 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Table > should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <table
+        class="_table_6f0cba"
+      >
+        <thead
+          class="_header_692233"
+        >
+          <tr
+            class="_row_692233"
+          >
+            <th
+              class="_cell_d2877c _sortable_d2877c _asc_d2877c"
+              data-testid="table-header-cell"
+            >
+              <div
+                class="_container_d2877c"
+              >
+                <svg
+                  class="icon icon-arrow _icon_d2877c"
+                  data-testid="icon"
+                  height="15"
+                  stroke=""
+                  width="15"
+                >
+                  <use
+                    xlink:href="/src/assets/img/general/icons.svg#arrow"
+                  />
+                </svg>
+                ID
+              </div>
+            </th>
+            <th
+              class="_cell_d2877c _sortable_d2877c"
+              data-testid="table-header-cell"
+            >
+              <div
+                class="_container_d2877c"
+              >
+                <svg
+                  class="icon icon-arrow _icon_d2877c"
+                  data-testid="icon"
+                  height="15"
+                  stroke=""
+                  width="15"
+                >
+                  <use
+                    xlink:href="/src/assets/img/general/icons.svg#arrow"
+                  />
+                </svg>
+                Profile
+              </div>
+            </th>
+            <th
+              class="_cell_d2877c"
+              data-testid="table-header-cell"
+            >
+              <div
+                class="_container_d2877c"
+              >
+                Email
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="_body_2d6dd5"
+          data-testid="table-body"
+        >
+          <tr
+            class="_row_2d6dd5"
+          >
+            <td
+              class="_cell_2d6dd5"
+            >
+              1
+            </td>
+            <td
+              class="_cell_2d6dd5"
+            >
+              <button>
+                Gilberte Prin
+              </button>
+            </td>
+            <td
+              class="_cell_2d6dd5"
+            >
+              test@test.test
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <table
+      class="_table_6f0cba"
+    >
+      <thead
+        class="_header_692233"
+      >
+        <tr
+          class="_row_692233"
+        >
+          <th
+            class="_cell_d2877c _sortable_d2877c _asc_d2877c"
+            data-testid="table-header-cell"
+          >
+            <div
+              class="_container_d2877c"
+            >
+              <svg
+                class="icon icon-arrow _icon_d2877c"
+                data-testid="icon"
+                height="15"
+                stroke=""
+                width="15"
+              >
+                <use
+                  xlink:href="/src/assets/img/general/icons.svg#arrow"
+                />
+              </svg>
+              ID
+            </div>
+          </th>
+          <th
+            class="_cell_d2877c _sortable_d2877c"
+            data-testid="table-header-cell"
+          >
+            <div
+              class="_container_d2877c"
+            >
+              <svg
+                class="icon icon-arrow _icon_d2877c"
+                data-testid="icon"
+                height="15"
+                stroke=""
+                width="15"
+              >
+                <use
+                  xlink:href="/src/assets/img/general/icons.svg#arrow"
+                />
+              </svg>
+              Profile
+            </div>
+          </th>
+          <th
+            class="_cell_d2877c"
+            data-testid="table-header-cell"
+          >
+            <div
+              class="_container_d2877c"
+            >
+              Email
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="_body_2d6dd5"
+        data-testid="table-body"
+      >
+        <tr
+          class="_row_2d6dd5"
+        >
+          <td
+            class="_cell_2d6dd5"
+          >
+            1
+          </td>
+          <td
+            class="_cell_2d6dd5"
+          >
+            <button>
+              Gilberte Prin
+            </button>
+          </td>
+          <td
+            class="_cell_2d6dd5"
+          >
+            test@test.test
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

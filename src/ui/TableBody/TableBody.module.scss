@@ -1,0 +1,22 @@
+.body {
+}
+
+.row {
+  @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400;
+
+  &:hover {
+    @apply bg-gray-50 dark:bg-gray-700;
+  }
+}
+
+.placeholder {
+  @apply text-center;
+
+  & td {
+    @apply py-4;
+  }
+}
+
+.cell {
+  @apply px-8 py-4;
+}

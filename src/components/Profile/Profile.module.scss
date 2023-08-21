@@ -1,0 +1,18 @@
+.container {
+  @apply flex items-center text-gray-900 whitespace-nowrap dark:text-white;
+}
+
+.avatar {
+}
+
+.content {
+  @apply ml-4;
+}
+
+.name {
+  @apply text-base font-semibold;
+}
+
+.username {
+  @apply font-normal text-gray-500 dark:text-gray-400;
+}

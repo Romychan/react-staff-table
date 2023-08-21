@@ -1,0 +1,11 @@
+.item {
+  @apply py-2 px-3 rounded-xl cursor-pointer  dark:text-gray-400;
+
+  &:hover {
+    @apply bg-gray-100 dark:bg-gray-600 dark:text-white;
+  }
+
+  &.active {
+    @apply text-blue-500;
+  }
+}

@@ -1,0 +1,19 @@
+.input {
+  @apply flex items-center appearance-none w-11 p-1 bg-gray-200 rounded-full cursor-pointer transition;
+
+  &:checked {
+    @apply bg-blue-500;
+
+    &:before {
+      @apply bg-white translate-x-full;
+    }
+  }
+
+  &:before {
+    @apply content-[''] aspect-square w-1/2 bg-white shadow rounded-full transition;
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+}

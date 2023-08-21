@@ -1,0 +1,15 @@
+.container {
+  @apply max-w-7xl mx-auto py-32;
+}
+
+.header {
+  @apply flex items-center justify-between mb-16;
+}
+
+.title {
+  @apply text-3xl font-medium text-gray-900 dark:text-white;
+}
+
+.pagination {
+  @apply mt-4;
+}

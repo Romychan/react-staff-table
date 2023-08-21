@@ -1,0 +1,55 @@
+.cell {
+  @apply px-8 py-4 cursor-default;
+
+  &:first-child {
+    @apply rounded-tl-lg;
+  }
+
+  &:last-child {
+    @apply rounded-tr-lg;
+  }
+
+  &.sortable {
+    @apply cursor-pointer;
+
+    &:hover {
+      @apply text-gray-900 dark:text-white;
+
+      & .icon {
+        @apply stroke-gray-900 dark:stroke-white;
+      }
+    }
+  }
+
+  &.asc,
+  &.desc {
+    @apply text-gray-900 dark:text-white;
+
+    & .icon {
+      @apply stroke-blue-500;
+    }
+
+    &:hover {
+      & .icon {
+        @apply stroke-blue-500 dark:stroke-blue-500;
+      }
+    }
+  }
+
+  &.asc {
+  }
+
+  &.desc {
+    & .icon {
+      @apply rotate-180;
+    }
+  }
+}
+
+.container {
+  @apply flex items-center;
+}
+
+.icon {
+  @apply rotate-0 stroke-gray-500 stroke-2 mr-1 dark:stroke-gray-400;
+}

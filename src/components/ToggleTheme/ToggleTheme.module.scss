@@ -1,0 +1,11 @@
+.container {
+  @apply flex items-center;
+}
+
+.text {
+  @apply mr-3 text-sm text-gray-900 dark:text-gray-300;
+
+  &:last-child {
+    @apply ml-3 mr-0;
+  }
+}
