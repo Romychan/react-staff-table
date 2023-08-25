@@ -1,4 +1,4 @@
-import { ThemeContextProvider } from './contexts/ThemeContext';
+import { ThemeContextProvider } from '@contexts/ThemeContext';
 
 import { StaffPage } from './pages/StaffPage';
 

@@ -3,7 +3,7 @@ import {
   ReactElement,
   cloneElement,
   isValidElement,
-  PropsWithChildren,
+  ReactNode,
   useEffect,
   useMemo,
   useRef,
@@ -17,10 +17,16 @@ import { Icon } from '../Icon/Icon';
 import styles from './Dropdown.module.scss';
 
 interface IDropdownProps {
+  /** Sets the label of the dropdown component */
   label?: string;
+  /** Sets the initial value by index */
   initialValue?: number;
+  /** The callback that will be called when the menu item is selected */
   onChange: (item: string) => void;
+  /** Additional class for the component */
   className?: string;
+  /** The content of the component */
+  children: ReactNode;
 }
 
 export const Dropdown = ({
@@ -29,7 +35,7 @@ export const Dropdown = ({
   onChange,
   className = '',
   children,
-}: PropsWithChildren<IDropdownProps>) => {
+}: IDropdownProps) => {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
   const [isOpen, setOpen] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(initialValue);

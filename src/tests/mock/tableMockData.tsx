@@ -25,6 +25,7 @@ export const MOCK_DATA_TABLE: Users[] = [
     role: 'Frontend Developer',
     company: 'Google',
     status: 'online',
-    avatar: './test.png',
+    avatar:
+      'https://robohash.org/doloresmollitiaaperiam.png?size=50x50&set=set1',
   },
 ];

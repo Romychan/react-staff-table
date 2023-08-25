@@ -13,6 +13,7 @@ import { Input } from '@ui/Input/Input';
 import styles from './StaffHeader.module.scss';
 
 interface IStaffHeader {
+  /** The callback that will be called when the user selects the parameters to filter */
   setQueryParams: Dispatch<SetStateAction<IQueryParams>>;
 }
 
@@ -40,9 +41,9 @@ export const StaffHeader = ({ setQueryParams }: IStaffHeader) => {
           }
           className={styles.dropdown}
         >
-          {COMPANY_FILTER.map((item) => (
-            <DropdownItem key={item.value} value={item.value}>
-              {item.label}
+          {COMPANY_FILTER.map((company) => (
+            <DropdownItem key={company.value} value={company.value}>
+              {company.label}
             </DropdownItem>
           ))}
         </Dropdown>
@@ -57,9 +58,9 @@ export const StaffHeader = ({ setQueryParams }: IStaffHeader) => {
           }
           className={styles.dropdown}
         >
-          {ROLE_FILTER.map((item) => (
-            <DropdownItem key={item.value} value={item.value}>
-              {item.label}
+          {ROLE_FILTER.map((role) => (
+            <DropdownItem key={role.value} value={role.value}>
+              {role.label}
             </DropdownItem>
           ))}
         </Dropdown>

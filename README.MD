@@ -26,6 +26,7 @@ This is a web application for viewing staff. The web application provides the ab
 - Pagination
 - Dark mode
 - Unit and snapshot testing of components
+- Storybook with project components
 
 ## Technologies
 
@@ -36,6 +37,7 @@ This is a web application for viewing staff. The web application provides the ab
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Storybook](https://storybook.js.org/)
 - [Mock Service Worker](https://mswjs.io/)
 
 ### Backend

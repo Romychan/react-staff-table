@@ -16,7 +16,7 @@ const defaultValue: IDefaultValue = {
   setTheme: () => {},
 };
 
-const ThemeContext = createContext(defaultValue);
+export const ThemeContext = createContext(defaultValue);
 
 export const ThemeContextProvider = ({ children }: PropsWithChildren) => {
   const { theme, setTheme } = useThemeMode();

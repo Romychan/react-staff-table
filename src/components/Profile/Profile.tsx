@@ -3,8 +3,11 @@ import { Avatar } from '@ui/Avatar/Avatar';
 import styles from './Profile.module.scss';
 
 interface IProfileProps {
+  /** Sets the name at the top */
   name: string;
+  /** Sets the username at the bottom */
   username: string;
+  /** Link to the avatar image */
   imageSrc: string;
 }
 

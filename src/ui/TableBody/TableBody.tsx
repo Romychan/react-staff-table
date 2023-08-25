@@ -5,8 +5,11 @@ import { Loader } from '@ui/Loader/Loader';
 import styles from './TableBody.module.scss';
 
 interface ITableBodyProps<T, K extends keyof T> {
+  /** Sets array of objects to be rendered in the table. */
   data: T[];
+  /** Sets table columns */
   columns: IColumnTable<T, K>[];
+  /** Sets the visibility of data loading */
   isLoading: boolean;
 }
 

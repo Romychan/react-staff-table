@@ -25,7 +25,8 @@ exports[`Table > should match snapshot 1`] = `
                   class="icon icon-arrow _icon_d2877c"
                   data-testid="icon"
                   height="15"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="15"
                 >
                   <use
@@ -46,7 +47,8 @@ exports[`Table > should match snapshot 1`] = `
                   class="icon icon-arrow _icon_d2877c"
                   data-testid="icon"
                   height="15"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="15"
                 >
                   <use
@@ -118,7 +120,8 @@ exports[`Table > should match snapshot 1`] = `
                 class="icon icon-arrow _icon_d2877c"
                 data-testid="icon"
                 height="15"
-                stroke=""
+                stroke="#000000"
+                stroke-width="1"
                 width="15"
               >
                 <use
@@ -139,7 +142,8 @@ exports[`Table > should match snapshot 1`] = `
                 class="icon icon-arrow _icon_d2877c"
                 data-testid="icon"
                 height="15"
-                stroke=""
+                stroke="#000000"
+                stroke-width="1"
                 width="15"
               >
                 <use

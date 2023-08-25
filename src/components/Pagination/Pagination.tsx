@@ -4,11 +4,17 @@ import clsx from 'clsx';
 import styles from './Pagination.module.scss';
 
 interface IPaginationProps {
+  /** Sets the current page */
   currentPage: number;
+  /** The callback that will be called when the page changes */
   setCurrentPage: (page: number) => void;
+  /** Sets total number of pages */
   totalCount: number;
+  /** Sets the number of entries per page */
   pageSize?: number;
+  /** Sets the range of pages to display. */
   pageRangeDisplayed?: number;
+  /** Additional class for the component */
   className?: string;
 }
 

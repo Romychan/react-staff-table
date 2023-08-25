@@ -26,6 +26,7 @@ export default defineConfig({
       '@ui': '/src/ui',
       '@hooks': '/src/hooks',
       '@store': '/src/store',
+      '@contexts': '/src/contexts',
       '@utils': '/src/utils',
       '@constants': '/src/constants',
       '@router': '/src/router',

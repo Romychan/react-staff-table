@@ -1,5 +1,5 @@
 .cell {
-  @apply px-8 py-4 cursor-default;
+  @apply px-8 py-4 cursor-default text-xs text-gray-500 dark:text-gray-400;
 
   &:first-child {
     @apply rounded-tl-lg;

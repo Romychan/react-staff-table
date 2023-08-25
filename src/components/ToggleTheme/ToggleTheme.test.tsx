@@ -5,15 +5,22 @@ import {
   screen,
 } from '@testing-library/react';
 
+import { mockMatchMedia } from '@tests/helpers/mockMatchMedia';
+
+import { ThemeContextProvider } from '@contexts/ThemeContext';
+
 import { ToggleTheme } from './ToggleTheme';
-import { mockMatchMedia } from '@tests/utils/mockMatchMedia';
 
 describe('ToggleTheme', () => {
   let container: RenderResult;
 
   beforeEach(() => {
     mockMatchMedia();
-    container = render(<ToggleTheme />);
+    container = render(
+      <ThemeContextProvider>
+        <ToggleTheme />
+      </ThemeContextProvider>,
+    );
   });
 
   it('should render correctly', () => {

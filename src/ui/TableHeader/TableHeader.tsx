@@ -11,8 +11,11 @@ import { TableHeaderCell } from '../TableHeaderCell/TableHeaderCell';
 import styles from './TableHeader.module.scss';
 
 interface ITableHeaderProps<T, K extends keyof T> {
+  /** Sets table columns */
   columns: IColumnTable<T, K>[];
+  /**  Sets parameters for sorting */
   sorting: ISortingTable<T, K>;
+  /** The callback that will be called when sorting is selected. */
   handleSorting: (accessor: K, order: TableOrderValue) => void;
 }
 
@@ -39,8 +42,7 @@ export const TableHeader = <T, K extends keyof T>({
           <TableHeaderCell
             key={accessor as string}
             isSortable={sortable}
-            sortKey={sortKey}
-            accessor={accessor}
+            isActive={accessor === sortKey}
             order={order}
             width={width}
             onClick={() => handleSortingChange(accessor)}

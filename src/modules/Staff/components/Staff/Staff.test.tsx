@@ -6,7 +6,7 @@ import {
 import { Staff } from './Staff';
 
 import { server } from '@tests/server';
-import { mockMatchMedia } from '@tests/utils/mockMatchMedia';
+import { mockMatchMedia } from '@tests/helpers/mockMatchMedia';
 
 beforeAll(() => {
   server.listen();

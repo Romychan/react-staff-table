@@ -13,7 +13,11 @@ describe('DropdownItem', () => {
   const handleClick = vi.fn();
 
   beforeEach(() => {
-    container = render(<DropdownItem onClick={handleClick}>Test</DropdownItem>);
+    container = render(
+      <DropdownItem value="test" onClick={handleClick}>
+        Test
+      </DropdownItem>,
+    );
   });
 
   it('should render correctly', () => {

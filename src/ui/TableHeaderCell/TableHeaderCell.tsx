@@ -1,29 +1,35 @@
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 import clsx from 'clsx';
 
 import { Icon } from '@ui/Icon/Icon';
 
 import styles from './TableHeaderCell.module.scss';
+import { TableOrderValue } from '@interfaces/index';
 
-interface ITableHeaderCellProps<T> {
+interface ITableHeaderCellProps {
+  /** Sets the availability of sorting for this column */
   isSortable?: boolean;
-  sortKey: T;
-  accessor: T;
-  order: 'asc' | 'desc';
+  /** Sets the current sorting for this column */
+  isActive: boolean;
+  /** Sets the sorting type */
+  order: TableOrderValue;
+  /** Sets the width of the column */
   width?: number;
+  /** The callback that will be called when sorting is selected. */
   onClick: () => void;
+  /** The content of the component */
+  children: ReactNode;
 }
 
-export const TableHeaderCell = <T,>({
+export const TableHeaderCell = ({
   isSortable,
-  sortKey,
-  accessor,
+  isActive,
   order,
   width,
   onClick,
   children,
-}: PropsWithChildren<ITableHeaderCellProps<T>>) => {
-  const isCurrentSortable = isSortable && sortKey === accessor;
+}: ITableHeaderCellProps) => {
+  const isCurrentSortable = isSortable && isActive;
   const isAscSort = isCurrentSortable && order === 'asc';
   const isDescSort = isCurrentSortable && order === 'desc';
   const isDefaultSort = !isAscSort && !isDescSort && isSortable;

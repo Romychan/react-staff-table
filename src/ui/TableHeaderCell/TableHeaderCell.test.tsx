@@ -10,8 +10,7 @@ describe('TableHeaderCell', () => {
     render(
       <TableHeaderCell
         isSortable
-        sortKey="profile"
-        accessor="name"
+        isActive={false}
         order="asc"
         onClick={handleClick}
       >
@@ -31,13 +30,7 @@ describe('TableHeaderCell', () => {
     const handleClick = vi.fn();
 
     render(
-      <TableHeaderCell
-        isSortable
-        sortKey="name"
-        accessor="name"
-        order="asc"
-        onClick={handleClick}
-      >
+      <TableHeaderCell isSortable isActive order="asc" onClick={handleClick}>
         Test
       </TableHeaderCell>,
     );
@@ -53,8 +46,7 @@ describe('TableHeaderCell', () => {
     render(
       <TableHeaderCell
         isSortable={false}
-        sortKey="profile"
-        accessor="name"
+        isActive={false}
         order="asc"
         onClick={handleClick}
       >
@@ -74,13 +66,7 @@ describe('TableHeaderCell', () => {
     const handleClick = vi.fn();
 
     render(
-      <TableHeaderCell
-        isSortable
-        sortKey="name"
-        accessor="name"
-        order="asc"
-        onClick={handleClick}
-      >
+      <TableHeaderCell isSortable isActive order="asc" onClick={handleClick}>
         Test
       </TableHeaderCell>,
     );
@@ -95,13 +81,7 @@ describe('TableHeaderCell', () => {
     const handleClick = vi.fn();
 
     render(
-      <TableHeaderCell
-        isSortable
-        sortKey="name"
-        accessor="name"
-        order="desc"
-        onClick={handleClick}
-      >
+      <TableHeaderCell isSortable isActive order="desc" onClick={handleClick}>
         Test
       </TableHeaderCell>,
     );
@@ -117,8 +97,7 @@ describe('TableHeaderCell', () => {
     const container = render(
       <TableHeaderCell
         isSortable
-        sortKey="profile"
-        accessor="name"
+        isActive={false}
         order="asc"
         onClick={handleClick}
       >

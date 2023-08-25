@@ -29,6 +29,7 @@
       "@hooks/*": ["hooks/*"],
       "@router/*": ["router/*"],
       "@store/*": ["store/*"],
+      "@contexts/*": ["contexts/*"],
       "@utils/*": ["utils/*"],
       "@constants/*": ["constants/*"],
       "@tests/*": ["tests/*"],

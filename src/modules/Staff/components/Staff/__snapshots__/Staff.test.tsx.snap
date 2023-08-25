@@ -64,7 +64,8 @@ exports[`Staff > should match snapshot 1`] = `
                     class="icon icon-chevron _icon_b2c890"
                     data-testid="icon"
                     height="8"
-                    stroke=""
+                    stroke="#000000"
+                    stroke-width="1"
                     width="8"
                   >
                     <use
@@ -90,7 +91,8 @@ exports[`Staff > should match snapshot 1`] = `
                     class="icon icon-chevron _icon_b2c890"
                     data-testid="icon"
                     height="8"
-                    stroke=""
+                    stroke="#000000"
+                    stroke-width="1"
                     width="8"
                   >
                     <use
@@ -123,7 +125,8 @@ exports[`Staff > should match snapshot 1`] = `
                     class="icon icon-arrow _icon_d2877c"
                     data-testid="icon"
                     height="15"
-                    stroke=""
+                    stroke="#000000"
+                    stroke-width="1"
                     width="15"
                   >
                     <use
@@ -145,7 +148,8 @@ exports[`Staff > should match snapshot 1`] = `
                     class="icon icon-arrow _icon_d2877c"
                     data-testid="icon"
                     height="15"
-                    stroke=""
+                    stroke="#000000"
+                    stroke-width="1"
                     width="15"
                   >
                     <use
@@ -178,7 +182,8 @@ exports[`Staff > should match snapshot 1`] = `
                     class="icon icon-arrow _icon_d2877c"
                     data-testid="icon"
                     height="15"
-                    stroke=""
+                    stroke="#000000"
+                    stroke-width="1"
                     width="15"
                   >
                     <use
@@ -233,7 +238,7 @@ exports[`Staff > should match snapshot 1`] = `
                   <img
                     alt="Gilberte Prin"
                     class="_avatar_3ecbb0"
-                    src="./test.png"
+                    src="https://robohash.org/doloresmollitiaaperiam.png?size=50x50&set=set1"
                   />
                   <div
                     class="_content_a5316a"
@@ -364,7 +369,8 @@ exports[`Staff > should match snapshot 1`] = `
                   class="icon icon-chevron _icon_b2c890"
                   data-testid="icon"
                   height="8"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="8"
                 >
                   <use
@@ -390,7 +396,8 @@ exports[`Staff > should match snapshot 1`] = `
                   class="icon icon-chevron _icon_b2c890"
                   data-testid="icon"
                   height="8"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="8"
                 >
                   <use
@@ -423,7 +430,8 @@ exports[`Staff > should match snapshot 1`] = `
                   class="icon icon-arrow _icon_d2877c"
                   data-testid="icon"
                   height="15"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="15"
                 >
                   <use
@@ -445,7 +453,8 @@ exports[`Staff > should match snapshot 1`] = `
                   class="icon icon-arrow _icon_d2877c"
                   data-testid="icon"
                   height="15"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="15"
                 >
                   <use
@@ -478,7 +487,8 @@ exports[`Staff > should match snapshot 1`] = `
                   class="icon icon-arrow _icon_d2877c"
                   data-testid="icon"
                   height="15"
-                  stroke=""
+                  stroke="#000000"
+                  stroke-width="1"
                   width="15"
                 >
                   <use
@@ -533,7 +543,7 @@ exports[`Staff > should match snapshot 1`] = `
                 <img
                   alt="Gilberte Prin"
                   class="_avatar_3ecbb0"
-                  src="./test.png"
+                  src="https://robohash.org/doloresmollitiaaperiam.png?size=50x50&set=set1"
                 />
                 <div
                   class="_content_a5316a"

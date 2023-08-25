@@ -10,6 +10,7 @@ exports[`Icon > should match snapshot 1`] = `
         data-testid="icon"
         height="18"
         stroke="#ffffff"
+        stroke-width="1"
         width="18"
       >
         <use
@@ -24,6 +25,7 @@ exports[`Icon > should match snapshot 1`] = `
       data-testid="icon"
       height="18"
       stroke="#ffffff"
+      stroke-width="1"
       width="18"
     >
       <use
