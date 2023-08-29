@@ -28,7 +28,8 @@ export const TableHeader = <T, K extends keyof T>({
   const [order, setOrder] = useState(sorting.order);
 
   const handleSortingChange = (accessor: K) => {
-    const sortOrder = order === 'asc' ? 'desc' : 'asc';
+    const sortOrder =
+      sorting.column === accessor && order === 'asc' ? 'desc' : 'asc';
 
     setSortKey(accessor);
     setOrder(sortOrder);

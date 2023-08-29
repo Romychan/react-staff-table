@@ -222,15 +222,18 @@ exports[`Staff > should match snapshot 1`] = `
             data-testid="table-body"
           >
             <tr
+              aria-rowindex="0"
               class="_row_2d6dd5"
             >
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-id"
               >
                 1
               </td>
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-name"
               >
                 <div
                   class="_container_a5316a"
@@ -258,11 +261,13 @@ exports[`Staff > should match snapshot 1`] = `
               </td>
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-email"
               >
                 test@test.test
               </td>
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-status"
               >
                 <span
                   class="_badge_63aabb _green_63aabb"
@@ -272,11 +277,13 @@ exports[`Staff > should match snapshot 1`] = `
               </td>
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-role"
               >
                 Frontend Developer
               </td>
               <td
                 class="_cell_2d6dd5"
+                data-testid="table-body-cell-company"
               >
                 Google
               </td>
@@ -527,15 +534,18 @@ exports[`Staff > should match snapshot 1`] = `
           data-testid="table-body"
         >
           <tr
+            aria-rowindex="0"
             class="_row_2d6dd5"
           >
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-id"
             >
               1
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-name"
             >
               <div
                 class="_container_a5316a"
@@ -563,11 +573,13 @@ exports[`Staff > should match snapshot 1`] = `
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-email"
             >
               test@test.test
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-status"
             >
               <span
                 class="_badge_63aabb _green_63aabb"
@@ -577,11 +589,13 @@ exports[`Staff > should match snapshot 1`] = `
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-role"
             >
               Frontend Developer
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-company"
             >
               Google
             </td>

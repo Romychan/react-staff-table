@@ -65,6 +65,22 @@ describe('Table', () => {
     expect(screen.getByText(/Empty Data/i)).toBeInTheDocument();
   });
 
+  it('should render with error', () => {
+    const handleClick = vi.fn();
+
+    render(
+      <Table
+        columns={MOCK_COLUMNS}
+        data={[]}
+        sorting={MOCK_SORTING}
+        handleSorting={handleClick}
+        isError
+      />,
+    );
+
+    expect(screen.getByText(/Empty Data/i)).toBeInTheDocument();
+  });
+
   it('should handle click if sortable', () => {
     const handleClick = vi.fn();
 

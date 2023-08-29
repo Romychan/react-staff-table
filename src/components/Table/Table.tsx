@@ -17,6 +17,8 @@ interface ITableProps<T, K extends keyof T> {
   data: T[];
   /** Sets the visibility of data loading */
   isLoading?: boolean;
+  /** Sets the visibility of the error */
+  isError?: boolean;
   /**  Sets parameters for sorting */
   sorting: ISortingTable<T, K>;
   /** The callback that will be called when sorting is selected. */
@@ -27,6 +29,7 @@ export const Table = <T extends MinTableItem, K extends keyof T>({
   columns,
   data,
   isLoading = false,
+  isError = false,
   sorting,
   handleSorting,
 }: ITableProps<T, K>) => {
@@ -37,7 +40,12 @@ export const Table = <T extends MinTableItem, K extends keyof T>({
         sorting={sorting}
         handleSorting={handleSorting}
       />
-      <TableBody columns={columns} data={data} isLoading={isLoading} />
+      <TableBody
+        columns={columns}
+        data={data}
+        isLoading={isLoading}
+        isError={isError}
+      />
     </table>
   );
 };

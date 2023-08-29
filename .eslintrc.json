@@ -5,20 +5,16 @@
     "es2020": true
   },
   "extends": [
+    "plugin:cypress/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:storybook/recommended"
   ],
-  "ignorePatterns": [
-    "dist",
-    ".eslintrc.cjs"
-  ],
+  "ignorePatterns": ["dist"],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "react-refresh"
-  ],
+  "plugins": ["react-refresh"],
   "rules": {
     "react-refresh/only-export-components": [
       "warn",
@@ -32,18 +28,14 @@
     "linebreak-style": 0,
     "require-jsdoc": "off",
     "no-shadow": "off",
-    "@typescript-eslint/no-shadow": [
-      "error"
-    ],
+    "@typescript-eslint/no-shadow": ["error"],
     "react/react-in-jsx-scope": "off",
     "spaced-comment": [
       "error",
       "always",
       {
         "line": {
-          "markers": [
-            "/"
-          ]
+          "markers": ["/"]
         }
       }
     ]

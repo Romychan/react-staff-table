@@ -12,6 +12,7 @@ export const useFetch = <T>(url: string) => {
   const [data, setData] = useState<T>();
   const [headers, setHeaders] = useState<Headers>();
   const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     if (!url) return;
@@ -26,18 +27,26 @@ export const useFetch = <T>(url: string) => {
         setHeaders(cachedData.headers);
         setIsLoading(false);
       } else {
-        const fetchingData = await fetch(url);
-        const response = await fetchingData.json();
+        try {
+          const fetchingData = await fetch(url);
+          const response = await fetchingData.json();
 
-        cache.current[url] = { data: response, headers: fetchingData.headers };
-        setHeaders(fetchingData.headers);
-        setData(response);
-        setIsLoading(false);
+          cache.current[url] = {
+            data: response,
+            headers: fetchingData.headers,
+          };
+          setHeaders(fetchingData.headers);
+          setData(response);
+        } catch {
+          setIsError(true);
+        } finally {
+          setIsLoading(false);
+        }
       }
     };
 
     fetchData();
   }, [url]);
 
-  return { data, headers, isLoading };
+  return { data, headers, isLoading, isError };
 };

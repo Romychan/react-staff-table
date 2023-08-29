@@ -75,15 +75,18 @@ exports[`Table > should match snapshot 1`] = `
           data-testid="table-body"
         >
           <tr
+            aria-rowindex="0"
             class="_row_2d6dd5"
           >
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-id"
             >
               1
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-name"
             >
               <button>
                 Gilberte Prin
@@ -91,6 +94,7 @@ exports[`Table > should match snapshot 1`] = `
             </td>
             <td
               class="_cell_2d6dd5"
+              data-testid="table-body-cell-email"
             >
               test@test.test
             </td>
@@ -170,15 +174,18 @@ exports[`Table > should match snapshot 1`] = `
         data-testid="table-body"
       >
         <tr
+          aria-rowindex="0"
           class="_row_2d6dd5"
         >
           <td
             class="_cell_2d6dd5"
+            data-testid="table-body-cell-id"
           >
             1
           </td>
           <td
             class="_cell_2d6dd5"
+            data-testid="table-body-cell-name"
           >
             <button>
               Gilberte Prin
@@ -186,6 +193,7 @@ exports[`Table > should match snapshot 1`] = `
           </td>
           <td
             class="_cell_2d6dd5"
+            data-testid="table-body-cell-email"
           >
             test@test.test
           </td>

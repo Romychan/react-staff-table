@@ -62,6 +62,7 @@ export const Staff = () => {
   const {
     data: users,
     isLoading,
+    isError,
     headers,
   } = useFetch<Users[]>(
     `${import.meta.env.VITE_API_URL}/users?${new URLSearchParams(
@@ -82,6 +83,7 @@ export const Staff = () => {
         columns={columns}
         data={users || []}
         isLoading={isLoading}
+        isError={isError}
         sorting={{ column: queryParams._sort, order: queryParams._order }}
         handleSorting={(accessor, order) =>
           setQueryParams((prev) => ({

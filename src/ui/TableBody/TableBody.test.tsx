@@ -35,6 +35,14 @@ describe('TableBody', () => {
     expect(screen.getByText(/Empty Data/i)).toBeInTheDocument();
   });
 
+  it('should render with error', () => {
+    render(
+      <TableBody columns={MOCK_COLUMNS} data={[]} isLoading={false} isError />,
+    );
+
+    expect(screen.getByText(/Empty Data/i)).toBeInTheDocument();
+  });
+
   it('should match snapshot', () => {
     const container = render(
       <TableBody

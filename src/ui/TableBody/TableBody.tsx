@@ -11,26 +11,35 @@ interface ITableBodyProps<T, K extends keyof T> {
   columns: IColumnTable<T, K>[];
   /** Sets the visibility of data loading */
   isLoading: boolean;
+  /** Sets the visibility of the error */
+  isError?: boolean;
 }
 
 export const TableBody = <T extends MinTableItem, K extends keyof T>({
   data,
   columns,
   isLoading,
+  isError = false,
 }: ITableBodyProps<T, K>) => {
   const renderRows = () => {
-    if (!isLoading && !data.length) {
+    if ((!isLoading && !data.length) || isError) {
       return (
         <tr className={styles.placeholder}>
-          <td colSpan={columns.length}>Empty Data</td>
+          <td colSpan={columns.length} data-testid="table-body-empty">
+            Empty Data
+          </td>
         </tr>
       );
     } else if (data.length) {
-      return data.map((item) => {
+      return data.map((item, index) => {
         return (
-          <tr key={item.id} className={styles.row}>
+          <tr key={item.id} className={styles.row} aria-rowindex={index}>
             {columns.map(({ accessor, Cell }) => (
-              <td key={accessor as string} className={styles.cell}>
+              <td
+                key={accessor as string}
+                className={styles.cell}
+                data-testid={`table-body-cell-${accessor as string}`}
+              >
                 {Cell ? Cell({ currentData: item }) : item[accessor]}
               </td>
             ))}
